@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        a {
+    text-decoration: none;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #fef7ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: #fef7ff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 12px;
+        }
+
+        .tab {
+            width: 225px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            color: #49454f;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.1px;
+            position: relative;
+        }
+
+        .selected {
+            color: #65558f;
+        }
+
+        .selected::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 35px;
+            height: 2px;
+            background: #65558f;
+            border-radius: 1px;
+        }
+        .contact-card {
+            width: 360px;
+            background-color: #fdfdfd;
+            border-radius: 12px;
+            margin: 20px auto;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            border: 1px solid #cac4d0;
+        }
+
+        .contact-content {
+            flex-grow: 1;
+            text-align: left;
+        }
+
+        .contact-header {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            color: #1d1b20;
+            margin-bottom: 8px;
+        }
+
+        .contact-subhead {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            color: #1d1b20;
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background-size: contain ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="tabs">
+            <a href="index.html"><div class="tab">Inicio</div></a>
+            <a href="project.html"><div class="tab">Projetos</div></a>
+            <a href="about.html"><div class="tab">Sobre Mim</div>
+            <a href="contatos.html"><div class="tab selected">Contato</div></a>
+        </div>
+        <div class="divider"></div>
+        
+        <div class="contact-card">
+            <div class="contact-content">
+                <div class="contact-header">Linkedin</div>
+                <div class="contact-subhead"><a href="https://www.linkedin.com/in/edson-da-silva-guedes-0b0127303/">Clique aqui</a> para acessar o meu Linkedin</div>
+            </div>
+            <div class="contact-icon" style="background-image: url('./assets/media-3.svg');"></div>
+        </div>
+        
+        <div class="contact-card">
+            <div class="contact-content">
+                <div class="contact-header">E-mail</div>
+                <div class="contact-subhead"><a href="mailto:recipient@example.com">edsondasilvaguedes@gmail.com</a></div>
+            </div>
+            <div class="contact-icon" style="background-image: url('./assets/media.svg');"></div>
+        </div>
+        
+        <div class="contact-card">
+            <div class="contact-content">
+                <div class="contact-header">Github (Pallas)</div>
+                <div class="contact-subhead"><a href="https://github.com/Pallas13">Clique aqui</a> para acessar o meu Github</div>
+            </div>
+            <div class="contact-icon" style="background-image: url('./assets/media-2.svg');"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>

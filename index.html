@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        a {
+    text-decoration: none;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #fef7ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: #fef7ff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 12px;
+        }
+
+        .tab {
+            width: 225px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            color: #49454f;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.1px;
+            position: relative;
+        }
+
+        .selected {
+            color: #65558f;
+        }
+
+        .selected::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 35px;
+            height: 2px;
+            background: #65558f;
+            border-radius: 1px;
+        }
+
+        .avatar {
+            width: 251px;
+            height: 238px;
+            margin: 20px auto;
+            background: url('./assets/generic-avatar.svg') no-repeat center center;
+            background-size: cover;
+        }
+
+        .info-card {
+            background: #ece6f0;
+            border-radius: 28px;
+            padding: 24px;
+            margin: 12px auto;
+            width: fit-content;
+        }
+
+        .headline {
+            font-size: 24px;
+            font-weight: 400;
+            color: #4f378b;
+            line-height: 32px;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .supporting-text {
+            font-size: 14px;
+            font-weight: 400;
+            color: #49454f;
+            line-height: 20px;
+            text-align: center;
+            letter-spacing: 0.25px;
+            max-width: 560px;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .chip {
+            background: #493971;
+            color: #fff;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            padding: 6px 16px;
+            height: 33px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0.1px;
+        }
+
+        .chip img {
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="tabs">
+            <a href="index.html"><div class="tab selected">Inicio</div></a>
+            <a href="project.html"><div class="tab">Projetos</div></a>
+            <a href="about.html"><div class="tab">Sobre Mim</div>
+            <a href="contatos.html"><div class="tab">Contato</div></a>
+        </div>
+        <div class="avatar"></div>
+        <div class="info-card">
+            <div class="headline">PALLAS DA SILVA GUEDES</div>
+            <div class="supporting-text">
+                Eu sou Pallas/Edson da Silva Guedes, tenho 17 anos atualmente moro no Brasil. Eu estou cursando ensino médio na escola "E.E. Professor Allyrio de Figueiredo Brasil" e também na mesma escola estou cursando curso técnico em "Desenvolvimento de Sistemas" com data de finalização no ano de 2025.
+            </div>
+        </div>
+        <div class="skills">
+            <div class="chip">
+                <img src="./assets/selected-icon-5.svg" alt="">
+                C
+            </div>
+            <div class="chip">
+                <img src="./assets/selected-icon-2.svg" alt="">
+                Linux
+            </div>
+            <div class="chip">
+                <img src="./assets/selected-icon-3.svg" alt="">
+                Shell Script
+            </div>
+            <div class="chip">
+                <img src="./assets/selected-icon-4.svg" alt="">
+                Microsoft Office
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

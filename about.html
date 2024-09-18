@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+    <style>
+   * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        a {
+    text-decoration: none;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #fef7ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: #fef7ff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 12px;
+        }
+
+        .tab {
+            width: 225px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            color: #49454f;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.1px;
+            position: relative;
+        }
+
+        .selected {
+            color: #65558f;
+        }
+
+        .selected::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 35px;
+            height: 2px;
+            background: #65558f;
+            border-radius: 1px;
+        }
+       .info-card {
+            background: #ece6f0;
+            border-radius: 28px;
+            padding: 24px;
+            margin: 12px auto;
+            width: 618px;
+        }
+        .headline {
+            font-size: 24px;
+            font-weight: 400;
+            color: #4f378b;
+            line-height: 32px;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .supporting-text {
+            font-size: 14px;
+            font-weight: 400;
+            color: #49454f;
+            line-height: 20px;
+            text-align: center;
+            letter-spacing: 0.25px;
+            max-width: 100%;
+            margin-bottom: 16px;
+        }
+
+        .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .icon img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="tabs">
+            <a href="index.html"><div class="tab">Inicio</div></a>
+            <a href="project.html"><div class="tab">Projetos</div></a>
+            <a href="about.html"><div class="tab  selected">Sobre Mim</div>
+            <a href="contatos.html"><div class="tab">Contato</div></a>
+        </div>
+
+        <div class="info-card">
+            <div class="headline">QUEM EU SOU?</div>
+            <div class="supporting-text">
+                Eu sou Pallas/Edson da Silva Guedes, tenho 17 anos atualmente moro no Brasil. Tenho experiência em Sistemas Baseados em Linux (Ubuntu/Debian), focando em desenvolvimento em desenvolvimento de aplicações em processamento de fala humana (STT/TTS).
+            </div>
+        </div>
+
+        <div class="info-card">
+            <div class="headline">STT E TTS</div>
+            <div class="supporting-text">
+                Processamento de Fala, é minha área de aprendizagem e profissionalidade. Atualmente estou trabalhando com TTS e STT utilizando ferramentas legadas que utilizam Hidden Markov Model (HMM) e usando recursos de aprendizagem de máquina para tratamento de texto de entrada.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

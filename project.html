@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projectos</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        a {
+    text-decoration: none;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #fef7ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: #fef7ff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 12px;
+        }
+
+        .tab {
+            width: 225px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            color: #49454f;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.1px;
+            position: relative;
+        }
+
+        .selected {
+            color: #65558f;
+        }
+
+        .selected::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 35px;
+            height: 2px;
+            background: #65558f;
+            border-radius: 1px;
+        }
+
+
+        .project-card {
+            width: 425px;
+            background-color: #2b292f;
+            border-radius: 28px;
+            margin: 0 auto 20px;
+            padding: 24px;
+        }
+
+        .project-headline {
+            font-size: 24px;
+            font-weight: 400;
+            color: #ffffff;
+            line-height: 32px;
+            margin-bottom: 16px;
+        }
+
+        .project-description {
+            font-size: 14px;
+            font-weight: 400;
+            color: #fff9ff;
+            line-height: 20px;
+            letter-spacing: 0.25px;
+            margin-bottom: 24px;
+        }
+
+        .primary-button {
+            display: inline-flex;
+            align-items: center;
+            background: #fff9ff;
+            border-radius: 100px;
+            padding: 10px 24px;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.1px;
+            cursor: pointer;
+        }
+
+        .primary-button img {
+            width: 18px;
+            height: 18px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="tabs">
+            <a href="index.html"><div class="tab">Inicio</div></a>
+            <a href="project.html"><div class="tab selected">Projetos</div></a>
+            <a href="about.html"><div class="tab">Sobre Mim</div>
+            <a href="contatos.html"><div class="tab">Contato</div></a>
+        </div>
+        <div class="divider"></div>
+        <div class="project-card">
+            <div class="project-headline">FestPB</div>
+            <div class="project-description">
+                FestPB é um projeto com objetivo de oferecer suporte ao Português Brasileiro ao software Text-to-Speech
+                Festival Speech Synthesis. Com opções de baixar pacotes de vozes.
+            </div>
+            <div class="primary-button">
+                <img src="./assets/icon.svg" alt="Access Icon">
+                <a href="https://github.com/Pallas13/FestPB">Acessar</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-headline">Niette (Desenvolvimento)</div>
+            <div class="project-description">
+                Um sintetizador de voz bilingüe (Espanhol-Português), utilizando técnicas de tradução de maquina e
+                aprendizagem de maquina.
+            </div>
+            <div class="primary-button">
+                <img src="./assets/icon-2.svg" alt="Access Icon">
+                Não disponível
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
